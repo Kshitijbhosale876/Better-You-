@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D4BFC6527187D9A004842FA /* story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4BFC6427187D9A004842FA /* story.swift */; };
+		0D4BFC6727187E15004842FA /* storyBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4BFC6627187E15004842FA /* storyBrain.swift */; };
 		0D93FC2826FB5BAD009C56AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D93FC2726FB5BAD009C56AC /* AppDelegate.swift */; };
 		0D93FC2A26FB5BAD009C56AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D93FC2926FB5BAD009C56AC /* SceneDelegate.swift */; };
 		0D93FC2C26FB5BAD009C56AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D93FC2B26FB5BAD009C56AC /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D4BFC6427187D9A004842FA /* story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = story.swift; sourceTree = "<group>"; };
+		0D4BFC6627187E15004842FA /* storyBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyBrain.swift; sourceTree = "<group>"; };
 		0D93FC2426FB5BAD009C56AC /* Better You!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Better You!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D93FC2726FB5BAD009C56AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D93FC2926FB5BAD009C56AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D69DB8F270C3B2500C08C91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D4BFC6427187D9A004842FA /* story.swift */,
+				0D4BFC6627187E15004842FA /* storyBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0D93FC1B26FB5BAD009C56AC = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +114,9 @@
 			children = (
 				0D93FC2726FB5BAD009C56AC /* AppDelegate.swift */,
 				0D93FC2926FB5BAD009C56AC /* SceneDelegate.swift */,
-				0D93FC2B26FB5BAD009C56AC /* ViewController.swift */,
-				0D93FC2D26FB5BAD009C56AC /* Main.storyboard */,
+				0D69DB8F270C3B2500C08C91 /* Model */,
+				0D93FC5826FB7628009C56AC /* Controller */,
+				0D93FC5726FB761F009C56AC /* View */,
 				0D93FC3026FB5BB2009C56AC /* Assets.xcassets */,
 				0D93FC3226FB5BB2009C56AC /* LaunchScreen.storyboard */,
 				0D93FC3526FB5BB2009C56AC /* Info.plist */,
@@ -126,6 +140,22 @@
 				0D93FC4B26FB5BB3009C56AC /* Info.plist */,
 			);
 			path = "Better You!UITests";
+			sourceTree = "<group>";
+		};
+		0D93FC5726FB761F009C56AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D93FC2D26FB5BAD009C56AC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0D93FC5826FB7628009C56AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D93FC2B26FB5BAD009C56AC /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D93FC2C26FB5BAD009C56AC /* ViewController.swift in Sources */,
+				0D4BFC6727187E15004842FA /* storyBrain.swift in Sources */,
 				0D93FC2826FB5BAD009C56AC /* AppDelegate.swift in Sources */,
 				0D93FC2A26FB5BAD009C56AC /* SceneDelegate.swift in Sources */,
+				0D4BFC6527187D9A004842FA /* story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
